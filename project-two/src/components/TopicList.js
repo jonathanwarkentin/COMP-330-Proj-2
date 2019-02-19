@@ -1,6 +1,5 @@
 import React from "react";
 import Topic from "./Topic";
-import { Button, Icon, } from 'react-materialize'
 
 class TopicList extends React.Component {
   render() {

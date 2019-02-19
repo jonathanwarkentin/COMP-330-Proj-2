@@ -10,7 +10,7 @@ class TrendsDisplay extends React.Component {
         <Button waves='light'>Open TrendsDisplay<Icon left>save</Icon></Button>
         <TrendSelectors />
         <TopicList />
-        <Button waves='light'>Colse TrendsDisplay<Icon left>save</Icon></Button>
+        <Button waves='light'>Close TrendsDisplay<Icon left>save</Icon></Button>
       </div>
     );
   }
