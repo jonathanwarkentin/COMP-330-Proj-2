@@ -1,15 +1,16 @@
 import React from "react";
 import TrendSelectors from "./TrendSelectors";
 import TopicList from "./TopicList";
+import { Button, Icon } from 'react-materialize'
 
 class TrendsDisplay extends React.Component {
   render() {
     return (
       <div>
-        <p>open TrendsDisplay</p>
+        <Button waves='light'>Open TrendsDisplay<Icon left>save</Icon></Button>
         <TrendSelectors />
         <TopicList />
-        <p>close TrendsDisplay</p>
+        <Button waves='light'>Colse TrendsDisplay<Icon left>save</Icon></Button>
       </div>
     );
   }
