@@ -1,7 +1,7 @@
 import React from "react";
 import TrendSelectors from "./TrendSelectors";
 import TopicList from "./TopicList";
-import { Button, Icon } from 'react-materialize'
+import { Button, Icon, } from 'react-materialize'
 
 class TrendsDisplay extends React.Component {
   render() {
