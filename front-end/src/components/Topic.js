@@ -5,8 +5,7 @@ class Topic extends React.Component {
     //SERVER TO-DO: retreive topic info from server here
     const topicInfo = {
       sentiment: "positive",
-      highlightedTweetStuff:
-        "Highlighted Tweet for " + `${this.props.listPosition}`,
+      highlightedTweetId: "1098019117574115329",
       graphStuff: "Graph stuff for Topic" + `${this.props.listPosition}`,
       miscInfo1: "miscInfo1 for Topic" + `${this.props.listPosition}`,
       miscInfo2: "miscInfo2 for Topic" + `${this.props.listPosition}`,

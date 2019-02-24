@@ -4,12 +4,16 @@
   "private": true,
   "dependencies": {
     "dotenv": "^6.2.0",
+    "npm-install-peers": "^1.2.1",
     "react": "^16.8.2",
     "react-dom": "^16.8.2",
     "react-materialize": "^2.6.0",
     "react-scripts": "2.1.5",
+    "react-tweet-embed": "^1.1.1",
+    "react-twitter-embed": "^2.0.4",
     "twit": "^2.2.11",
-    "twitter": "^1.7.1"
+    "twitter": "^1.7.1",
+    "typescript": "^3.3.3333"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -25,5 +29,10 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "devDependencies": {
+    "enzyme": "^3.9.0",
+    "enzyme-adapter-react-16": "^1.9.1",
+    "install-peers": "^1.0.3"
+  }
 }

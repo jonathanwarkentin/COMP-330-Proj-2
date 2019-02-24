@@ -1,8 +1,9 @@
 import React from "react";
+import TweetEmbed from "react-tweet-embed";
 
 const HighlightedTweet = props => (
   <div id="highlighted-tweet">
-    <p>{props.message}</p>
+    <TweetEmbed id={props.id} />
   </div>
 );
 
