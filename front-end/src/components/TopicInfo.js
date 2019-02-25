@@ -8,7 +8,10 @@ class TopicInfo extends React.Component {
     return (
       <div id="topic-info-container">
         <HighlightedTweet id={this.props.info.highlightedTweetId} />
-        <Graph graphData={this.props.info.graphStuff} />
+        <Graph
+          xData={this.props.info.graph.xData}
+          yData={this.props.info.graph.yData}
+        />
         <MiscInfo
           miscInfo1={this.props.info.miscInfo1}
           miscInfo2={this.props.info.miscInfo2}

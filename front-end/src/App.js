@@ -12,7 +12,7 @@ class App extends React.Component {
 
   topicInfo = {
     highlightedTweetId: undefined,
-    graphStuff: undefined,
+    graph: undefined,
     miscInfo1: undefined,
     miscInfo2: undefined,
     miscInfo3: undefined
@@ -26,7 +26,7 @@ class App extends React.Component {
 
   handleTopicInfo = data => {
     this.topicInfo.highlightedTweetId = data.highlightedTweetId;
-    this.topicInfo.graphStuff = data.graphStuff;
+    this.topicInfo.graph = data.graph;
     this.topicInfo.miscInfo1 = data.miscInfo1;
     this.topicInfo.miscInfo2 = data.miscInfo2;
     this.topicInfo.miscInfo3 = data.miscInfo3;

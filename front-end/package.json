@@ -5,9 +5,11 @@
   "dependencies": {
     "dotenv": "^6.2.0",
     "npm-install-peers": "^1.2.1",
+    "plotly.js": "^1.44.4",
     "react": "^16.8.2",
     "react-dom": "^16.8.2",
     "react-materialize": "^2.6.0",
+    "react-plotly.js": "^2.2.0",
     "react-scripts": "2.1.5",
     "react-tweet-embed": "^1.1.1",
     "react-twitter-embed": "^2.0.4",
