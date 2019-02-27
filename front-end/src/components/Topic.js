@@ -73,14 +73,18 @@ class Topic extends React.Component {
       return (
         <div className="highlighted  individual-topic">
           <span>#{this.props.name}</span>
-          <span className="sentiment">{this.getTopicInfo().sentiment}</span>
+          <span className={"sentiment " + this.getTopicInfo().sentiment}>
+            {this.getTopicInfo().sentiment}
+          </span>
         </div>
       );
     } else {
       return (
         <div className="individual-topic">
           <span>#{this.props.name}</span>
-          <span className="sentiment">{this.getTopicInfo().sentiment}</span>
+          <span className={"sentiment " + this.getTopicInfo().sentiment}>
+            {this.getTopicInfo().sentiment}
+          </span>
         </div>
       );
     }
