@@ -18,6 +18,10 @@ const Graph = props => (
         width: 320,
         height: 240,
         title: "Tweet Volume in Past 24 Hours",
+        font: {
+          family: "Raleway, sans-serif",
+          color: "#14171a"
+        },
         xaxis: { title: "Time" },
         yaxis: { title: "Tweets per hour" }
       }}

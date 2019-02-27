@@ -10,6 +10,8 @@ class App extends React.Component {
   };
 
   topicInfo = {
+    name: undefined,
+    sentiment: undefined,
     highlightedTweetId: undefined,
     graph: undefined,
     miscInfo1: undefined,
@@ -24,6 +26,8 @@ class App extends React.Component {
   };
 
   handleTopicInfo = data => {
+    this.topicInfo.name = data.name;
+    this.topicInfo.sentiment = data.sentiment;
     this.topicInfo.highlightedTweetId = data.highlightedTweetId;
     this.topicInfo.graph = data.graph;
     this.topicInfo.miscInfo1 = data.miscInfo1;
