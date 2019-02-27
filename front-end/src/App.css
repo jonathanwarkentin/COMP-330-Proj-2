@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Raleway:600,900");
+@import url("https://fonts.googleapis.com/css?family=Raleway:700,900");
 
 body {
   font-family: "Raleway", sans-serif;
@@ -33,10 +33,11 @@ li {
 }
 
 #main-description {
+  background: white;
   text-align: center;
   color: #14171a;
   margin: 1eem;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 #topics-display-container {
@@ -93,7 +94,7 @@ li {
   text-align: center;
   color: #14171a;
   margin-bottom: 0px;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 #highlighted-tweet {
@@ -107,6 +108,7 @@ li {
   border-width: thick;
   border-color: #1da1f2;
   padding-right: 0px;
+  font-weight: 900;
 }
 
 .sentiment {
@@ -136,11 +138,11 @@ li {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  font-weight: 600;
+  font-weight: 700;
   color: #14171a;
   padding-bottom: 2em;
 }
 
 #misc-info > h3 {
-  font-weight: 600;
+  font-weight: 700;
 }
