@@ -71,14 +71,14 @@ class Topic extends React.Component {
     if (this.props.listPosition === this.props.selectedTopic) {
       this.props.setTopicInfo(this.getTopicInfo());
       return (
-        <div className="highlighted">
+        <div className="highlighted  individual-topic">
           <span>#{this.props.name}</span>
           <span className="sentiment">{this.getTopicInfo().sentiment}</span>
         </div>
       );
     } else {
       return (
-        <div>
+        <div className="individual-topic">
           <span>#{this.props.name}</span>
           <span className="sentiment">{this.getTopicInfo().sentiment}</span>
         </div>

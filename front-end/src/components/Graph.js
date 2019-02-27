@@ -2,7 +2,8 @@ import React from "react";
 import Plot from "react-plotly.js";
 
 const Graph = props => (
-  <div id="graph">
+  <div id="graph-container">
+    {}
     <Plot
       data={[
         {
