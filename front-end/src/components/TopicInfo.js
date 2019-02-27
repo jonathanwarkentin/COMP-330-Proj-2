@@ -15,11 +15,7 @@ class TopicInfo extends React.Component {
           xData={this.props.info.graph.xData}
           yData={this.props.info.graph.yData}
         />
-        <MiscInfo
-          miscInfo1={this.props.info.miscInfo1}
-          miscInfo2={this.props.info.miscInfo2}
-          miscInfo3={this.props.info.miscInfo3}
-        />
+        <MiscInfo miscInfo1={this.props.info.miscInfo1} />
       </div>
     );
   }

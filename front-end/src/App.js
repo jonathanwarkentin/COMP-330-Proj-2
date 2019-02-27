@@ -9,14 +9,25 @@ class App extends React.Component {
     selectedTopic: 1
   };
 
+  allTopics = [
+    "Cohen",
+    "Jim Jordan",
+    "#PokemonSwordShield",
+    "#PokemonDirect",
+    "Scorbunny",
+    "Grookey",
+    "Sobble",
+    "Mark Meadows",
+    "#PokemonDay",
+    "Pokémon"
+  ];
+
   topicInfo = {
     name: undefined,
     sentiment: undefined,
     highlightedTweetId: undefined,
     graph: undefined,
-    miscInfo1: undefined,
-    miscInfo2: undefined,
-    miscInfo3: undefined
+    miscInfo1: undefined
   };
 
   selectTopic = listPosition => {
@@ -31,8 +42,6 @@ class App extends React.Component {
     this.topicInfo.highlightedTweetId = data.highlightedTweetId;
     this.topicInfo.graph = data.graph;
     this.topicInfo.miscInfo1 = data.miscInfo1;
-    this.topicInfo.miscInfo2 = data.miscInfo2;
-    this.topicInfo.miscInfo3 = data.miscInfo3;
   };
 
   render() {
@@ -50,7 +59,7 @@ class App extends React.Component {
                 >
                   <Topic
                     id="top-list-item"
-                    name="topic1"
+                    name={this.allTopics[0]}
                     listPosition={1}
                     selectedTopic={this.state.selectedTopic}
                     setTopicInfo={this.handleTopicInfo}
@@ -63,7 +72,7 @@ class App extends React.Component {
                   }}
                 >
                   <Topic
-                    name="topic2"
+                    name={this.allTopics[1]}
                     listPosition={2}
                     selectedTopic={this.state.selectedTopic}
                     setTopicInfo={this.handleTopicInfo}
@@ -76,7 +85,7 @@ class App extends React.Component {
                   }}
                 >
                   <Topic
-                    name="topic3"
+                    name={this.allTopics[2]}
                     listPosition={3}
                     selectedTopic={this.state.selectedTopic}
                     setTopicInfo={this.handleTopicInfo}
@@ -89,7 +98,7 @@ class App extends React.Component {
                   }}
                 >
                   <Topic
-                    name="topic4"
+                    name={this.allTopics[3]}
                     listPosition={4}
                     selectedTopic={this.state.selectedTopic}
                     setTopicInfo={this.handleTopicInfo}
@@ -102,7 +111,7 @@ class App extends React.Component {
                   }}
                 >
                   <Topic
-                    name="topic5"
+                    name={this.allTopics[4]}
                     listPosition={5}
                     selectedTopic={this.state.selectedTopic}
                     setTopicInfo={this.handleTopicInfo}
@@ -115,7 +124,7 @@ class App extends React.Component {
                   }}
                 >
                   <Topic
-                    name="topic6"
+                    name={this.allTopics[5]}
                     listPosition={6}
                     selectedTopic={this.state.selectedTopic}
                     setTopicInfo={this.handleTopicInfo}
@@ -128,7 +137,7 @@ class App extends React.Component {
                   }}
                 >
                   <Topic
-                    name="topic7"
+                    name={this.allTopics[6]}
                     listPosition={7}
                     selectedTopic={this.state.selectedTopic}
                     setTopicInfo={this.handleTopicInfo}
@@ -141,7 +150,7 @@ class App extends React.Component {
                   }}
                 >
                   <Topic
-                    name="topic8"
+                    name={this.allTopics[7]}
                     listPosition={8}
                     selectedTopic={this.state.selectedTopic}
                     setTopicInfo={this.handleTopicInfo}
@@ -154,7 +163,7 @@ class App extends React.Component {
                   }}
                 >
                   <Topic
-                    name="topic9"
+                    name={this.allTopics[8]}
                     listPosition={9}
                     selectedTopic={this.state.selectedTopic}
                     setTopicInfo={this.handleTopicInfo}
@@ -167,8 +176,7 @@ class App extends React.Component {
                   }}
                 >
                   <Topic
-                    id="bottom-list-item"
-                    name="topic10"
+                    name={this.allTopics[9]}
                     listPosition={10}
                     selectedTopic={this.state.selectedTopic}
                     setTopicInfo={this.handleTopicInfo}
