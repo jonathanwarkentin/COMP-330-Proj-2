@@ -184,3 +184,12 @@ li {
 .individual-topic:hover {
   background: #f5f8fa;
 }
+
+#tweet-volume-label {
+  margin: 0;
+}
+
+#tweet-volume {
+  margin: 0;
+  margin-top: 2vh;
+}
