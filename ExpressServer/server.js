@@ -67,7 +67,7 @@ function shortenTweet(inputTweet) {
 }
 
 //commented out until fully integrated
-
+/*
 function runPy(stringToAnalyze) {
   return new Promise(async function(resolve, reject) {
     let options = {
@@ -98,6 +98,7 @@ function runMain() {
 }
 
 runMain(); //run main function
+*/
 
 // dummy info
 const allInfo = [
