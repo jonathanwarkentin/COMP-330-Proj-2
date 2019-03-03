@@ -67,13 +67,13 @@ function shortenTweet(inputTweet) {
 }
 
 //commented out until fully integrated
-/*
-function runPy() {
+
+function runPy(stringToAnalyze) {
   return new Promise(async function(resolve, reject) {
     let options = {
       mode: "text",
       scriptPath: "../back-end/python",
-      args: ["-m", "string value goes here"]
+      args: ["-m", stringToAnalyze]
     };
 
     await PythonShell.run("predict_sentiment.py", options, function(
@@ -82,8 +82,8 @@ function runPy() {
     ) {
       if (err) throw err;
       console.log("results: ");
-      for (let i of results) {
-        //console.log(i, "---->", typeof i)
+      for (i of results) {
+        console.log(i, "---->", typeof i);
       }
       resolve(results);
     });
@@ -92,13 +92,12 @@ function runPy() {
 
 function runMain() {
   return new Promise(async function(resolve, reject) {
-    let r = await runPy();
-    //console.log() do whatever we want to do with the tweet here.
+    let r = await runPy("this is a happy tweet");
+    console.log("end runMain");
   });
 }
 
 runMain(); //run main function
- */
 
 // dummy info
 const allInfo = [
