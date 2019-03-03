@@ -1,31 +1,35 @@
 # COMP-330-Proj-2
 
 - An extension of project 1 (tweet parser) from LUC COMP 330, Spring 2019
-
-## Outside Modules
-
-- We used Chart.js (https://www.chartjs.org/) for creating the chart of % Positive Tweets/Day for the past 7 days.
-- We used npm twit https://www.npmjs.com/package/twit to interact with the twitter API.
-- We used dotenv https://www.npmjs.com/package/dotenv to load environmental variables for the API keys, and tokens.
-
-## DESCRIPTION
-
-- This is web based application built using React js
-- This project was setup with create-React-app https://facebook.github.io/create-react-app/
-- A single page Web application
+- Built by Emmanuel Amobi, Luke Dosen, and Jonathan Warkentin
+- This is a single page web app that displays sentiment analysis and other relevant information on current Twitter trends .
 
 ## Function
 
-- Displays top 10 trending tweets in the last 7 days
-- Do sentiment analysis on them
-- Shows extra information for each of the tweets when you click them
--
+- Displays 10 of top trending topics on Twitter
+- Does sentiment analysis on each of them
+- Shows most recent tweet, tweet volume, and chart of % positive tweets over past 7 days for each of the topics when you click them
 
-## How to run / Requirements
+## How to Run
 
-# Tweettrends
+- Install npm (we currently have v8.12.0): https://www.npmjs.com/get-npm
+- Run "git clone https://github.com/ldosen/COMP-330-Proj-2.git" in your terminal
+- CD into the repo, then into ExpressServer
+- Run "npm install" - this ensures proper node modules are installed for server
+- CD into front-end
+- Run "npm install" again in the front-end folder - this ensures proper node modules are installed for React
+- Start the React client by running "npm start" in the front-end folder
+- Open a new terminal window and CD back into the repo and into the ExpressServer folder
+- Run "node server.js" to start the server
+- Go to localhost:3000 in your web browser (React should have already opened a new tab at this address) and reload the page
+- Note: structuring the startup process this way is to avoid ELIFECYCLE errors, which can occur when starting the server before the react client on the same computer. Don't worry if at first your React shows an error - it should go away after starting the server and reloading the client.
+- Done!
 
-Gather the top 10 trending tweets and do sentiment analysis on them.
+### Outside Modules
+
+- We used Chart.js (https://www.chartjs.org/) for creating the chart of % Positive Tweets/Day for the past 7 days.
+- We used npm twit https://www.npmjs.com/package/twit to interact with the Twitter API.
+- We used dotenv https://www.npmjs.com/package/dotenv to load environmental variables for the API keys, and tokens.
 
 ### Python Machine Learning Modules
 
