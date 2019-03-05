@@ -10,7 +10,12 @@
 - Does sentiment analysis on each of them
 - Shows most recent tweet, tweet volume, and chart of % positive tweets over past 7 days for each of the topics when you click them
 
-## How to Run
+## How to Run (as a user
+
+- Go to https://tweettrend.herokuapp.com/
+- Done!
+
+## How to Run (for development purposes)
 
 - Install npm (we currently have v8.12.0): https://www.npmjs.com/get-npm
 - Run "git clone https://github.com/ldosen/COMP-330-Proj-2.git" in your terminal
@@ -47,9 +52,14 @@ Since the dataset was so large, we took an out-of-core approach to training the 
 The during training, the model gets a batch of 1,000 samples, tokenizes them, vectorizes them, and then partially fits them to a logistic regression model. A partial fit is necessary when doing out-of-core learning because normal fit methods provided to sklearn classifiers require the entire dataset to be in memory to train. At the end of this training process the classifier is pickled so it can be reused from other scripts without the classifier having to be retrained.
 
 `predict_sentiment.py` uses the pickled classifier created in the above script to predict the class label of any given sample. This function is called form the `server.js` file to get the sentiment of tweets retrieved from the twitter api.
-## Something we learnt from the Lecture videos
-* We learnt a lot about the importance of git and github
-* We learnt how to avoid merge conflicts by working on separate forks of the same repository and creating pull requests
-* We also had experience with fixing merge conflicts.
-* We learnt how using git makes working in teams more manageable and effective 
 
+## Material from lecture videos
+
+- We learned a lot about the importance of git and GitHub
+- We learned how to avoid merge conflicts by working on separate forks of the same repository and creating pull requests.
+- We also had experience with fixing merge conflicts.
+- We learned how using git makes working in teams more manageable and effective.
+
+## Design Pattern
+
+- We used the Composite design pattern in the form of the React UI. As a React app is made up of various components in a parent/child format, it perfectly demonstrates the Composite design pattern. In our app, for example, the TopicInfo component displays only info inherited as props from the currently selected topic. Moreover, due to the nature of HTML structure, modifying parent elements such as the ordered list of topics deeply affects how children such as individual topics behave.
