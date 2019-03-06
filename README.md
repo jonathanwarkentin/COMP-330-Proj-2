@@ -17,6 +17,7 @@
 
 ## How to Run (for development purposes)
 
+- Contact one of us (Emmanuel Amobi, Luke Dosen, Jonathan Warkentin) for Twitter API credentials, and when received, copy and paste and save into a .env file in the root folder of the repo
 - Install npm (we currently have v8.12.0): https://www.npmjs.com/get-npm
 - Run "git clone https://github.com/ldosen/COMP-330-Proj-2.git" in your terminal
 - CD into the repo, then into ExpressServer
