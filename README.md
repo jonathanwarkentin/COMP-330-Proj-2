@@ -19,13 +19,13 @@
 
 - Contact one of us (Emmanuel Amobi, Luke Dosen, Jonathan Warkentin) for Twitter API credentials, and when received, copy and paste and save into a .env file in the ExpressServer folder of the repo
 - Install npm (we currently have v8.12.0): https://www.npmjs.com/get-npm
-- Run "git clone https://github.com/ldosen/COMP-330-Proj-2.git" in your terminal
+- Run "git clone https://github.com/jonathanwarkentin/COMP-330-Proj-2.git" in your terminal
 - CD into the repo, then into ExpressServer
 - Run "npm install" - this ensures proper node modules are installed for server
 - CD into front-end
 - Run "npm install" again in the front-end folder - this ensures proper node modules are installed for React
 - Start the React client by running "npm start" in the front-end folder
-- Open a new terminal window and CD back into the repo and into the ExpressServer folder
+- Once the React client is running, open a new terminal window and CD back into the repo and into the ExpressServer folder
 - Run "node server.js" to start the server
 - Go to localhost:3000 in your web browser (React should have already opened a new tab at this address) and reload the page
 - Note: structuring the startup process this way is to avoid ELIFECYCLE errors, which can occur when starting the server before the react client on the same computer. Don't worry if at first your React shows an error - it should go away after starting the server and reloading the client.
