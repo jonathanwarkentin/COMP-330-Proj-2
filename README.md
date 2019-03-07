@@ -24,6 +24,7 @@
 - Run "npm install" - this ensures proper node modules are installed for server
 - CD into front-end
 - Run "npm install" again in the front-end folder - this ensures proper node modules are installed for React
+- Run "npm install react-scripts --save" - this ensures the "npm start" command will function properly
 - Start the React client by running "npm start" in the front-end folder
 - Once the React client is running, open a new terminal window and CD back into the repo and into the ExpressServer folder
 - Run "node server.js" to start the server
